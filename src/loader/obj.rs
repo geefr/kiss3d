@@ -49,7 +49,7 @@ fn error(line: usize, err: &str) -> ! {
 }
 
 fn warn(line: usize, err: &str) {
-    println!("At line {}: {}", line, err)
+    //println!("At line {}: {}", line, err)
 }
 
 /// Parses an obj file.
@@ -139,7 +139,7 @@ pub fn parse(
                             )
                         }
                         _ => {
-                            println!("Warning: unknown line {} ignored: `{}'", l, line);
+                            //println!("Warning: unknown line {} ignored: `{}'", l, line);
                         }
                     }
                 }

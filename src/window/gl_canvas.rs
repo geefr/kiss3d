@@ -37,7 +37,7 @@ impl AbstractCanvas for GLCanvas {
             .with_visibility(!hide);
         let canvas_setup = canvas_setup.unwrap_or(CanvasSetup {
             vsync: true,
-            samples: NumSamples::Zero,
+            samples: NumSamples::Eight,
         });
         let context = ContextBuilder::new()
             .with_vsync(canvas_setup.vsync)
