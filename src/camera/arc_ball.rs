@@ -391,7 +391,7 @@ impl Camera for ArcBall {
                 self.at = Point3::origin();
                 self.update_projviews();
             }
-            WindowEvent::Scroll(_, off, _) => self.handle_scroll(off as f32),
+            WindowEvent::Scroll(_, off, _) => self.handle_scroll(- off as f32),
             WindowEvent::FramebufferSize(w, h) => {
                 self.projection.set_aspect(w as f32 / h as f32);
                 self.update_projviews();
